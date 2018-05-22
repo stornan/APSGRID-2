@@ -1,0 +1,139 @@
+@media screen and (max-width: 768px){
+	body{
+        padding: 0;
+        margin: 0;
+	}
+    .dark
+    {
+        padding: 15px;
+        background: black;
+        color: #ffffff;
+    }
+
+	#main{
+		grid-template-areas: "header" "aside" "content"  "footer";
+		grid-template-rows: 30vh 6vh 90vh 10vh;
+	}
+	
+	.mainNav{
+		margin-left: 15%;
+	}
+
+    /*HEADER*/
+    .mainHeader{
+        grid-area: header;
+        background: #35424a;
+        color: #ffffff;
+        border-top:#e8491d 3px solid;
+        border-bottom:#e8491d 3px solid;
+    }
+
+    header #Brand h1{
+        padding: 20%;
+        margin-left: 80%;
+    }
+
+    header .highlight{
+        color: #1e8fcb;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    header a
+    {
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 16px;
+    }
+
+
+    header ul
+    {
+        border-top:#e8491d 3px solid;
+        float: right;
+        margin-right: 10%;
+    }
+
+    header li
+    {
+        display: inline-block;
+        padding: 25px;
+    }
+
+    header a:hover
+    {
+        color: #1e8fcb;
+        font-weight: bold;
+    }
+
+    /*CONTENT*/
+    .mainContent{
+        grid-area: content;
+        background:url('../img/Clima-Chuva.png') no-repeat;
+        color: #F5F5F5;/*text*/
+    }
+
+    #mainTable{
+        margin: 10% auto;
+        width: 60%; 
+    }
+    table, th, td {
+        margin-top: 10%;
+        border: 2px solid black;
+        overflow: hidden;
+    }
+    table {
+        border-spacing: 5px;
+    }
+
+    /*Botão*/
+    .btn1{
+        width: 90px;
+        height: 35px;
+        background:#e8491d;
+        margin-left: 40%;
+        margin-top: 3%;
+        border: 0;
+        font-weight: bold;
+    }
+
+    /*Aside*/
+    .mainTime{
+        padding: 2%;
+        text-align: center;
+        background: #35424a;
+        border-bottom:#e8491d 3px solid;
+        color: white;
+    }
+
+    /*FOOTER*/
+    .mainFooter{
+        grid-area: footer;
+        color: #ffffff;
+        background-color: #1e8fcb;
+        text-align: center;
+    }
+
+    footer p{
+        margin-top: 20px;
+    }
+
+    /*SOBRE*/
+    #sob{
+        margin: 0;
+        background: #35424a;
+        color: white;
+    }
+
+    .mainSobre{
+        background:url('../img/Clima-Chuva.png') no-repeat;
+        margin: auto;
+        text-align: center;
+    }
+
+    aside h3, p{
+        padding: 3%;
+        width: 100%;
+        text-align: center;
+    }
